@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { fetchDataFromApi } from './utils/api'
+import { useEffect } from 'react';
+import { fetchDataFromApi } from './utils/api';
 
 function App() {
 
