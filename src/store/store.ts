@@ -1,7 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
+import homeSlice from '../features/homeSlice';
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    home: homeSlice
+  },
 })
 
 export type RootState = ReturnType<typeof store.getState>
