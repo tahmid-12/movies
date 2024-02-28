@@ -5,16 +5,17 @@ import ContentWrapper from "../contentWrapper/contentWrapper";
 import Img from "../lazyLoadImage/Img";
 import "./style.scss";
 
+import { RootState } from "../../store/store";
+
 import useFetch from "../../hooks/useFetch";
 
 const HeroBanner = () => {
 
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
-  const { url } = useSelector((state) => state.home);
+  const { url } = useSelector((state: RootState) => state.home);
   const navigate = useNavigate();
 
-  console.log("URL in Banner", url);
 
   const { data, loading } = useFetch("/movie/popular");
 
