@@ -1,9 +1,17 @@
 import HeroBanner from "./heroBanner/HeroBanner";
 import ContentWrapper from "./contentWrapper/contentWrapper";
 import Img from "./lazyLoadImage/Img";
+import Trending from "./trending/Trending";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
+import SwitchTabs from "./switchTabs/SwitchTabs";
 
 export default {
     HeroBanner,
     ContentWrapper,
-    Img
+    Img,
+    Trending,
+    Header,
+    Footer,
+    SwitchTabs
 }
