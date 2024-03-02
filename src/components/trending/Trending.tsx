@@ -3,6 +3,7 @@ import ContentWrapper from "../contentWrapper/contentWrapper";
 import SwitchTabs from "../switchTabs/SwitchTabs";
 import "./style.scss";
 import useFetch from "../../hooks/useFetch";
+import Carousel from "../carousel/Carousel";
 
 
 const Trending = () => {
@@ -23,6 +24,7 @@ const Trending = () => {
         <span className="carouselTitle"> Trending</span>
         <SwitchTabs data={tabs} onTabChange={onTabChange}/>
       </ContentWrapper>
+      <Carousel data={data?.results} loading={loading}/>
     </div>
   );
 };

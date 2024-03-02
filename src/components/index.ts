@@ -5,6 +5,7 @@ import Trending from "./trending/Trending";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import SwitchTabs from "./switchTabs/SwitchTabs";
+import Carousel from "./carousel/Carousel";
 
 export default {
     HeroBanner,
@@ -13,5 +14,6 @@ export default {
     Trending,
     Header,
     Footer,
-    SwitchTabs
+    SwitchTabs,
+    Carousel
 }
