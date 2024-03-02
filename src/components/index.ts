@@ -6,6 +6,7 @@ import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import SwitchTabs from "./switchTabs/SwitchTabs";
 import Carousel from "./carousel/Carousel";
+import CircleRating from "./circleRating/CircleRating";
 
 export default {
     HeroBanner,
@@ -15,5 +16,6 @@ export default {
     Header,
     Footer,
     SwitchTabs,
-    Carousel
+    Carousel,
+    CircleRating
 }
