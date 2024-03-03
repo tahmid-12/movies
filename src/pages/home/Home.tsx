@@ -1,4 +1,6 @@
 import HeroBanner from "../../components/heroBanner/HeroBanner";
+import Popular from "../../components/popular/Popular";
+import TopRated from "../../components/topRated/TopRated";
 import Trending from "../../components/trending/Trending";
 import "./style.scss";
 
@@ -7,6 +9,8 @@ const Home = () => {
     <div className="homePage">
       <HeroBanner />
       <Trending />
+      <Popular />
+      <TopRated />
     </div>
   )
 }
