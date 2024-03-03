@@ -8,6 +8,8 @@ import SwitchTabs from "./switchTabs/SwitchTabs";
 import Carousel from "./carousel/Carousel";
 import CircleRating from "./circleRating/CircleRating";
 import Genres from "./genres/Genres";
+import Popular from "./popular/Popular";
+import TopRated from "./topRated/TopRated";
 
 export default {
     HeroBanner,
@@ -19,5 +21,7 @@ export default {
     SwitchTabs,
     Carousel,
     CircleRating,
-    Genres
+    Genres,
+    Popular,
+    TopRated
 }
