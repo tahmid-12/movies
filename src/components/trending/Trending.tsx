@@ -14,7 +14,7 @@ const Trending = () => {
 
   const tabs = [{ id: 1, title: "Day" }, { id: 2, title: "Week" }];
 
-  const onTabChange = (tab: string) => {
+  const onTabChange = (tab: Object) => {
     setEndPoint(tab === "Day" ? "day" : "week");
   };
     

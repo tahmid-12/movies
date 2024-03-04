@@ -6,7 +6,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
-
+import { RootState } from "../../store/store";
 import ContentWrapper from "../contentWrapper/contentWrapper";
 import Img from "../lazyLoadImage/Img";
 import CircleRating from "../circleRating/CircleRating";
@@ -15,13 +15,23 @@ import PosterFallback from "../../assets/no-poster.png";
 
 import "./style.scss";
 
-const Carousel = ({ data, loading,endpoint }) => {
-  const carouselContainer = useRef();
-  const { url } = useSelector((state) => state.home);
+type LoadingState = String | boolean;
+
+
+interface Props {
+  data: any[]; 
+  loading: LoadingState;
+  endpoint?: string | "";
+}
+
+const Carousel = ({ data, loading,endpoint }: Props) => {
+  const carouselContainer = useRef<HTMLDivElement>(null);
+  const { url } = useSelector((state: RootState) => state.home);
+  
   const navigate = useNavigate();
 
   const navigation = (direction: string) => {
-    const container = carouselContainer.current;
+    const container = carouselContainer.current! as HTMLDivElement
 
         const scrollAmount =
         direction === "left"
