@@ -69,7 +69,7 @@ const Carousel = ({ data, loading,endpoint }: Props) => {
         />
         {!loading ? (
           <div className="carouselItems" ref={carouselContainer}>
-            {data?.map((item) => {
+            {Array.isArray(data) && data.map((item) => {
               const posterUrl = item.poster_path
                 ? url.poster + item.poster_path
                 : PosterFallback;
