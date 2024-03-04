@@ -14,7 +14,7 @@ const TopRated = () => {
 
   const tabs = [{ id: 1, title: "Movies" }, { id: 2, title: "TV Shows" }];
 
-  const onTabChange = (tab: string) => {
+  const onTabChange = (tab: Object) => {
     setEndPoint(tab === "Movies" ? "movie" : "tv");
   };
     
