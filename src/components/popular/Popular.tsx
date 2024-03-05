@@ -24,7 +24,8 @@ const Popular = () => {
         <span className="carouselTitle">What's Popular</span>
         <SwitchTabs data={tabs} onTabChange={onTabChange}/>
       </ContentWrapper>
-      <Carousel data={data?.results} loading={loading} endpoint={endPoint}/>
+      {/* <Carousel data={data?.results} loading={loading} endpoint={endPoint}/> */}
+      <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} />
     </div>
   );
 };
