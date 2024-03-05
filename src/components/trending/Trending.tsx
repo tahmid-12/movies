@@ -24,7 +24,7 @@ const Trending = () => {
         <span className="carouselTitle"> Trending</span>
         <SwitchTabs data={tabs} onTabChange={onTabChange}/>
       </ContentWrapper>
-      <Carousel data={data?.results} loading={loading}/>
+      <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} />
     </div>
   );
 };
