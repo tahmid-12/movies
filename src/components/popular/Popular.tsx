@@ -15,7 +15,8 @@ const Popular = () => {
   const tabs = [{ id: 1, title: "Movies" }, { id: 2, title: "TV Shows" }];
 
   const onTabChange = (tab: Object) => {
-    setEndPoint(tab === "Movies" ? "movie" : "tv");
+    console.log("Tan in Popular =>", tab.title)
+    setEndPoint(tab.title === "Movies" ? "movie" : "tv");
   };
     
   return (
@@ -24,8 +25,8 @@ const Popular = () => {
         <span className="carouselTitle">What's Popular</span>
         <SwitchTabs data={tabs} onTabChange={onTabChange}/>
       </ContentWrapper>
-      {/* <Carousel data={data?.results} loading={loading} endpoint={endPoint}/> */}
-      <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} />
+      <Carousel data={data?.results} loading={loading} endpoint={endPoint}/>
+      {/* <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} /> */}
     </div>
   );
 };

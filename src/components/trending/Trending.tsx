@@ -15,7 +15,7 @@ const Trending = () => {
   const tabs = [{ id: 1, title: "Day" }, { id: 2, title: "Week" }];
 
   const onTabChange = (tab: Object) => {
-    setEndPoint(tab === "Day" ? "day" : "week");
+    setEndPoint(tab.title === "Day" ? "day" : "week");
   };
     
   return (
@@ -24,7 +24,8 @@ const Trending = () => {
         <span className="carouselTitle"> Trending</span>
         <SwitchTabs data={tabs} onTabChange={onTabChange}/>
       </ContentWrapper>
-      <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} />
+      <Carousel data={data?.results} loading={loading} endpoint={endPoint}/>
+      {/* <Carousel data={(data as unknown as { results: any[] })?.results} loading={loading} /> */}
     </div>
   );
 };
