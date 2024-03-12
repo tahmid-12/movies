@@ -12,6 +12,8 @@ import Popular from "./popular/Popular";
 import TopRated from "./topRated/TopRated";
 import DetailsBanner from "./detailsBanner/DetailsBanner";
 import VideoPopup from "./videoPopup/VideoPopUp";
+import VideosSection from "./videosSection/VideosSection";
+
 
 export default {
     HeroBanner,
@@ -27,5 +29,6 @@ export default {
     Popular,
     TopRated,
     DetailsBanner,
-    VideoPopup
+    VideoPopup,
+    VideosSection
 }
