@@ -10,6 +10,8 @@ import CircleRating from "./circleRating/CircleRating";
 import Genres from "./genres/Genres";
 import Popular from "./popular/Popular";
 import TopRated from "./topRated/TopRated";
+import DetailsBanner from "./detailsBanner/DetailsBanner";
+import VideoPopup from "./videoPopup/VideoPopUp";
 
 export default {
     HeroBanner,
@@ -23,5 +25,7 @@ export default {
     CircleRating,
     Genres,
     Popular,
-    TopRated
+    TopRated,
+    DetailsBanner,
+    VideoPopup
 }
