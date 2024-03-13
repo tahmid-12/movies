@@ -22,9 +22,10 @@ interface Props {
   data: any[]; 
   loading: LoadingState;
   endpoint?: string | "";
+  title: string | "";
 }
 
-const Carousel = ({ data, loading,endpoint }: Props) => {
+const Carousel = ({ data, loading,endpoint, title }: Props) => {
   const carouselContainer = useRef<HTMLDivElement>(null);
   const { url } = useSelector((state: RootState) => state.home);
   
@@ -59,6 +60,7 @@ const Carousel = ({ data, loading,endpoint }: Props) => {
   return (
     <div className="carousel">
       <ContentWrapper>
+        {title && <div className="carouselTitle">{title}</div>}
         <BsFillArrowLeftCircleFill
           className="carouselLeftNav arrow"
           onClick={() => navigation("left")}
