@@ -13,6 +13,8 @@ import TopRated from "./topRated/TopRated";
 import DetailsBanner from "./detailsBanner/DetailsBanner";
 import VideoPopup from "./videoPopup/VideoPopUp";
 import VideosSection from "./videosSection/VideosSection";
+import Spinner from "./spinner/Spinner";
+import MovieCard from "./movieCard/MovieCard";
 
 
 export default {
@@ -30,5 +32,7 @@ export default {
     TopRated,
     DetailsBanner,
     VideoPopup,
-    VideosSection
+    VideosSection,
+    Spinner,
+    MovieCard
 }
